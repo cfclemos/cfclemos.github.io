@@ -1,13 +1,126 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: rgb(240,239,237);
 
-	<head>
-		<title>Carlos Filipe de Castro Lemos</title>
-	</head>
+        }
+        
+        @font-face{
+            font-family: Night;
+            src: url("fontes/night.woff")
+        }
 
-	<body>
-		<p>
-		<h1>Website em construção.</h1>
-	</body>
+        .menu_nome{
+            font-family: Night, sans-serif;
+            font-size: 30px;
+            position: absolute;
+            top: 45px;
+            left: 45px;
+            z-index: 100;
+        }
+
+        .barra_vermelha{
+            position: absolute;
+            top: 67px;
+            left: 40px;
+            height: 2px;
+            width: 400px;
+            background-color: red;
+            z-index: 50;
+        }
+
+        .barra_preta{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 68px;
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            z-index: 25;
+        }
+
+        #container{
+            min-width:400px;
+        }
+
+        #menu{
+
+            position: absolute;
+            top:40px;
+            right: 10px;
+            margin: 0;
+            padding: 0;
+            border-width: 1px;
+        }
+
+        #menu ul{
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            height:60px;
+        }
+
+        #menu ul li{
+            font-family: Verdana;
+            float: right;
+        }
+
+        #menu ul li a{
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            line-height: 2;
+            padding: 10px;
+            color: black;
+        }
+
+        #menu ul li a:hover{
+            border: 3px;
+            border-bottom: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="barra_preta"></div>
+    <div id="container">
+        
+        <div>
+            <i class="menu_nome">Carlos Filipe de Castro Lemos</i>
+            
+            <div class="barra_vermelha"></div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li class="itens_menu"><a href="">Contato</a></li>
+                <li class="itens_menu"><a href="">Biografia</a></li>
+                <li class="itens_menu"><a href="">Home</a></li>
+            </ul>
+        </div>
 
 
+        <div id="rodape">
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
 </html>

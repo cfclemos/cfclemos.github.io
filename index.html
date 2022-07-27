@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,18 @@
             margin: 0;
             padding: 0;
         }
-        
-        body{
-            background-color: rgb(240,239,237);
+
+        body {
+            background-color: rgb(240, 239, 237);
 
         }
-        
-        @font-face{
+
+        @font-face {
             font-family: Night;
             src: url("fontes/night.woff")
         }
 
-        .menu_nome{
+        .menu_nome {
             font-family: Night, sans-serif;
             font-size: 30px;
             position: absolute;
@@ -29,7 +30,7 @@
             z-index: 100;
         }
 
-        .barra_vermelha{
+        .barra_vermelha {
             position: absolute;
             top: 67px;
             left: 40px;
@@ -39,7 +40,7 @@
             z-index: 50;
         }
 
-        .barra_preta{
+        .barra_preta {
             margin: 0;
             padding: 0;
             position: absolute;
@@ -50,34 +51,34 @@
             z-index: 25;
         }
 
-        #container{
-            min-width:400px;
+        #container {
+            min-width: 400px;
         }
 
-        #menu{
+        #menu {
 
             position: absolute;
-            top:40px;
+            top: 40px;
             right: 10px;
             margin: 0;
             padding: 0;
             border-width: 1px;
         }
 
-        #menu ul{
+        #menu ul {
             position: relative;
             padding: 0;
             margin: 0;
             list-style-type: none;
-            height:60px;
+            height: 60px;
         }
 
-        #menu ul li{
+        #menu ul li {
             font-family: Verdana;
             float: right;
         }
 
-        #menu ul li a{
+        #menu ul li a {
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
@@ -86,21 +87,21 @@
             color: black;
         }
 
-        #menu ul li a:hover{
+        #menu ul li a:hover {
             border: 3px;
             border-bottom: 3px solid red;
         }
-
     </style>
 </head>
+
 <body>
-    
+
     <div class="barra_preta"></div>
     <div id="container">
-        
+
         <div>
             <i class="menu_nome">Carlos Filipe de Castro Lemos</i>
-            
+
             <div class="barra_vermelha"></div>
         </div>
 
@@ -123,4 +124,5 @@
 
 
 </body>
+
 </html>
